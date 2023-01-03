@@ -1,0 +1,61 @@
+.content-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    background-color: #f6f8fa;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    height: 70px;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-section div{
+margin-right: 20px;
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left-section label{
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.opened-issue-count{
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-section button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    margin: 0px 10px;
+    color: grey;
+}
+
+.right-section button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    .left-section{
+        display: none;
+    }
+
+    .content-header{
+        justify-content: center !important;
+    }
+  }
